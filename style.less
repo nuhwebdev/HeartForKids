@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@color: white; 
+@navbar : darken(darkgreen,10%) ;
+
+.navbar{
+    height: 7em;
+    background-color: @navbar;
+    align-items: center;
+    display: flex;
+    .navbar__logo{
+        color: @color;
+        font-size: 3em;
+        margin-left: 1em;
+    }
+
+    .navbar__logo__sublogo{
+        color: @color;
+        margin: 5px;
+
+    }
+}

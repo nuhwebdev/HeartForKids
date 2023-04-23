@@ -1,3 +1,19 @@
-h1{
-    color: red;
+* {
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  height: 7em;
+  background-color: #003100;
+  align-items: center;
+  display: flex;
+}
+.navbar .navbar__logo {
+  color: white;
+  font-size: 3em;
+  margin-left: 1em;
+}
+.navbar .navbar__logo__sublogo {
+  color: white;
+  margin: 5px;
 }
