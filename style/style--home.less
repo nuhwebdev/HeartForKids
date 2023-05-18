@@ -1,0 +1,326 @@
+/**!!
+CURRENT STYLESHEET IS WRITTEN IN BEM-NAMING CONVENTION*/
+@import "./objects.less";
+
+
+//TYPOGRAPHY
+h1,h2,h3,h4,h5,p{
+    color: @standardTextColor;
+}
+//TYPOGRAPHY//
+
+//COLOR PALETTE
+
+
+
+
+
+
+
+
+
+
+//HERO
+.hero{
+    height: 35em;
+    position: relative;
+    
+    .hero__video{
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
+    }
+
+    
+    .hero__holder{
+        max-width: 45em;
+        color: white;
+        position: absolute;
+        top: 12%;
+        left: 5%;
+
+        h1{
+            color: white;
+            font-size: 4em;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        h2{
+            color:white;
+            font-size: 2em;
+        }
+        .button{
+            margin-top: 1.5em;
+            color: #00ACA5;
+            border: 1px solid lightgray;
+            transition: color 0.3s;
+            background-color: @secondcolor;
+
+            a{
+                transition: color 0.3s;
+                text-decoration: none;
+                color: @buttontext;
+                padding: 1em;
+            }
+        }
+        .button a:hover {
+            cursor: pointer;
+            color: @buttontext--hover;
+        
+        }
+    }
+
+
+    
+}
+//HERO//
+
+
+//MAIN
+.main{
+    .project{
+        background-color: darken(@buttontext,10%);
+
+        margin-top: 8em;
+        margin-bottom: 10em;
+        display: flex;
+        box-shadow: 1px 1px 30px 1px lighten(black,10%);
+        border-radius: 10px;
+        max-height: 27em;
+        .project__img{
+            width: 80%;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px 0 0 10px;
+                object-fit: cover;
+            }
+            }
+            .project__donation{
+                width: 50%;
+                padding: 1em 1em 1em 2em;
+                border-radius: 10px;
+                box-shadow: -12px 1px 15px 4px lighten(black,10%);
+                position: relative;
+                
+                .project__title{
+                    color: @secondcolor;
+                    width: 100%;
+                    margin: 0.8em 0 0.5em 0;
+                    font-size: 2.5em;
+                }
+
+                #project__logo{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    border-radius: 10px;
+                    width: 3em;
+                    height: 3em;
+                }
+                .project__info{
+                    color: @secondcolor;
+                    margin-right: 2em;
+                    margin-bottom: 1em;
+
+                }
+
+                .project__mark{
+                    color: @secondcolor;
+                }
+                .project__swish{
+                    font-size: 2.8em;
+                    float: left;
+                    margin-top: 0.3em;
+                    color: @secondcolor;
+                }
+                img{
+                    width: 5em;
+                    height: 5em;
+                    margin-left: 1em;
+                }
+                .project__duration{
+                    background-color: @buttontext;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    border-radius: 2px 0 10px 0;
+                    padding: 0.3em 0.5em 0.5em 0.5em;
+                    p{
+                        color: white;
+                    }
+                }
+            }
+            
+}
+    .more{
+        border-radius: 15px;
+        position: relative;
+        margin-bottom: 8em;
+        span{
+            background-color: @buttontext;
+            font-weight: 800;
+            font-size: 1.2em;
+        }
+        .more__img{
+            filter: brightness(50%);
+            width: 100%;
+            height: 35em;
+            object-fit: cover;
+            object-position: 0 -9em;
+            border-radius: 10px;
+        }
+        .more__title, .more__button{
+            text-align: center;;
+            position: absolute;
+        }
+
+        .more__button{
+            top: 65%;
+            right: 25%;
+            padding: 0.8em 1.2em;
+            transform: translateX(50%);
+            font-size: 1.2em;
+            color: #00ACA5;
+            border: 1px solid lightgray;
+            transition: color 0.3s;
+            background-color: @secondcolor;
+
+            a {
+                    transition: color 0.3s;
+                    text-decoration: none;
+                    color: @buttontext;
+                    padding: 1em;
+                }
+        }
+
+        .more__button a:hover{
+            cursor: pointer;
+            color: @buttontext--hover;
+        }
+        .more__title{
+            top: 45%;
+            width: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            font-size: 3em;
+            font-weight: 800;
+            color: @secondcolor;
+        }
+    }
+}
+//MAIN//
+
+
+//MEDIA QUERIES
+
+@media (max-width:1020px) {
+
+
+
+
+    .hero{
+        display: grid;
+        .hero__holder {
+            text-align: center;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            }
+    }
+    
+
+    .main{
+        .project {
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            display: grid;
+            max-height: 100%;
+            .project__img {
+                width: 100%;
+                order: 1;
+            }
+    
+            .project__donation {
+                order:2;
+                width: 100%;
+                padding: 0;
+                box-shadow: -0px -12px 15px 4px lighten(black, 10%);
+                text-align: center;
+                .project__info {
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .project__swish {
+                    float: none;
+                }
+    
+                .swish__img {
+                    width: 3em;
+                    height: 3em;
+                    padding: 1em;
+                }
+                .project__duration {
+                    bottom:auto ;
+                    top: 0.1em;
+                    right: 50%;
+                    transform: translateX(50%);
+                    border-radius: 0 ;
+                    padding: 0.2em;
+                }
+            }
+    
+        }
+
+                .more {
+
+        
+               
+        
+                 
+                    .more__button {
+                        top: 60%;
+                        right: 50%;
+
+                        transform: translateX(50%);
+
+
+
+        
+                      
+                    }
+        
+               
+        
+                    .more__title {
+                        top: 20%;
+                        width: 50%;
+
+                        transform: translateX(50%);
+                        right: 50%;
+                        
+
+
+
+                    }
+                }
+    }
+        
+   
+    
+    
+}
+
+@media (max-width:900px) {
+
+    .more__title{
+        font-size: 2.5em !important;
+    }
+
+    .more__button{
+        top: 50% !important;
+    }
+    
+}

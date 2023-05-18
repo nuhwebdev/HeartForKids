@@ -1,0 +1,75 @@
+@import "./objects.less";
+
+.hero {
+    height: 20em;
+    position: relative;
+    margin-top: 2em;
+
+    .hero__img {
+        object-fit: cover;
+        filter: brightness(50%);
+        object-position: 0% 40%;
+    }
+
+
+    .hero__title {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        font-size: 3em;
+        font-weight: 800;
+        color: @secondcolor;
+    }
+
+    .hero__content {
+        position: absolute;
+        width: 30%;
+        color: @secondcolor;
+        top: 50%;
+        left: 10%;
+        font-weight: 300;
+    }
+}
+
+.main{
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 22em;
+    margin-top: 5em;
+    margin-bottom: 7em;
+
+    img{
+        object-fit:cover;
+
+        object-position: 0 30%;
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px 2px lighten(black,50%);
+    }
+    .main__contact{
+        width: 100%;
+
+        .email{
+            text-decoration: none;
+            h3{
+                color: @buttontext--hover;
+                font-size: 3em;
+            }
+        }
+
+        h3 {
+            font-size: 2em;
+            // color: @standardTextColor;
+            color: @buttontext;
+    
+        }
+    }
+    
+    
+    
+
+
+    
+}

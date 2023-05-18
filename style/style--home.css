@@ -1,0 +1,393 @@
+/**!!
+CURRENT STYLESHEET IS WRITTEN IN BEM-NAMING CONVENTION*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+.hover--underline {
+  position: relative;
+}
+.hover--underline::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #163724;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  width: 100%;
+  transform: scaleX(0);
+}
+.hover--underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.popup--animation {
+  transform: scale(1);
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+  padding: 1em 1em;
+  font-weight: 600;
+  font-size: 1em;
+  border-radius: 10px;
+  border: none;
+}
+.img--contained {
+  width: 100%;
+  height: 100%;
+}
+.highlight {
+  background-color: #00ACA5;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.list--style--remove {
+  list-style: none;
+}
+.list--style--remove a {
+  text-decoration: none;
+}
+.button--charity {
+  background-color: white;
+  color: #00ACA5;
+  border: 1px solid lightgray;
+  transition: color 0.3s;
+  box-shadow: 1px 1px 5px black;
+}
+.button--charity:hover {
+  color: #fc7317;
+  cursor: pointer;
+}
+.navbar {
+  background-color: white;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 15px #808080;
+}
+.navbar .navbar__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+.navbar .navbar__list a {
+  text-decoration: none;
+  color: #262626;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.navbar .navbar__list .navbar__list__logo {
+  max-width: 120px;
+  margin-top: -0.5em;
+}
+.popup {
+  padding: 1.5em;
+  position: absolute;
+  right: 0;
+  margin-top: -1em;
+  background-color: #fc7317;
+  text-align: center;
+  width: 300px;
+  transform: translate(100%, 0);
+  transition: transform 0.5s, background-color 1s, display 0.5s;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 1px 1px 10px black;
+}
+.popup img {
+  width: 5em;
+}
+.popup h2,
+.popup h3,
+.popup h4 {
+  color: white;
+  margin-top: 5px;
+}
+.popup #closePopUp {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  cursor: pointer;
+}
+.popup #closePopUp:hover {
+  color: #b3b3b3;
+}
+.popup--open {
+  transform: translate(0, 0);
+}
+.footer {
+  border-top: 1px solid #cccccc;
+}
+.footer img {
+  width: 12em;
+}
+.footer nav {
+  display: flex;
+  align-items: center;
+}
+.footer li {
+  margin: 0.5em 0;
+}
+.footer a {
+  color: #262626;
+  font-weight: 600;
+}
+.footer h3 {
+  width: 30%;
+  color: #808080;
+  font-weight: lighter;
+  margin-left: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: #262626;
+}
+.hero {
+  height: 35em;
+  position: relative;
+}
+.hero .hero__video {
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+.hero .hero__holder {
+  max-width: 45em;
+  color: white;
+  position: absolute;
+  top: 12%;
+  left: 5%;
+}
+.hero .hero__holder h1 {
+  color: white;
+  font-size: 4em;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.hero .hero__holder h2 {
+  color: white;
+  font-size: 2em;
+}
+.hero .hero__holder .button {
+  margin-top: 1.5em;
+  color: #00ACA5;
+  border: 1px solid lightgray;
+  transition: color 0.3s;
+  background-color: white;
+}
+.hero .hero__holder .button a {
+  transition: color 0.3s;
+  text-decoration: none;
+  color: #00ACA5;
+  padding: 1em;
+}
+.hero .hero__holder .button a:hover {
+  cursor: pointer;
+  color: #fc7317;
+}
+.main .project {
+  background-color: #007974;
+  margin-top: 8em;
+  margin-bottom: 10em;
+  display: flex;
+  box-shadow: 1px 1px 30px 1px #1a1a1a;
+  border-radius: 10px;
+  max-height: 27em;
+}
+.main .project .project__img {
+  width: 80%;
+}
+.main .project .project__img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  object-fit: cover;
+}
+.main .project .project__donation {
+  width: 50%;
+  padding: 1em 1em 1em 2em;
+  border-radius: 10px;
+  box-shadow: -12px 1px 15px 4px #1a1a1a;
+  position: relative;
+}
+.main .project .project__donation .project__title {
+  color: white;
+  width: 100%;
+  margin: 0.8em 0 0.5em 0;
+  font-size: 2.5em;
+}
+.main .project .project__donation #project__logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  width: 3em;
+  height: 3em;
+}
+.main .project .project__donation .project__info {
+  color: white;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+.main .project .project__donation .project__mark {
+  color: white;
+}
+.main .project .project__donation .project__swish {
+  font-size: 2.8em;
+  float: left;
+  margin-top: 0.3em;
+  color: white;
+}
+.main .project .project__donation img {
+  width: 5em;
+  height: 5em;
+  margin-left: 1em;
+}
+.main .project .project__donation .project__duration {
+  background-color: #00ACA5;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 2px 0 10px 0;
+  padding: 0.3em 0.5em 0.5em 0.5em;
+}
+.main .project .project__donation .project__duration p {
+  color: white;
+}
+.main .more {
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 8em;
+}
+.main .more span {
+  background-color: #00ACA5;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+.main .more .more__img {
+  filter: brightness(50%);
+  width: 100%;
+  height: 35em;
+  object-fit: cover;
+  object-position: 0 -9em;
+  border-radius: 10px;
+}
+.main .more .more__title,
+.main .more .more__button {
+  text-align: center;
+  position: absolute;
+}
+.main .more .more__button {
+  top: 65%;
+  right: 25%;
+  padding: 0.8em 1.2em;
+  transform: translateX(50%);
+  font-size: 1.2em;
+  color: #00ACA5;
+  border: 1px solid lightgray;
+  transition: color 0.3s;
+  background-color: white;
+}
+.main .more .more__button a {
+  transition: color 0.3s;
+  text-decoration: none;
+  color: #00ACA5;
+  padding: 1em;
+}
+.main .more .more__button a:hover {
+  cursor: pointer;
+  color: #fc7317;
+}
+.main .more .more__title {
+  top: 45%;
+  width: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  font-size: 3em;
+  font-weight: 800;
+  color: white;
+}
+@media (max-width: 1020px) {
+  .hero {
+    display: grid;
+  }
+  .hero .hero__holder {
+    text-align: center;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main .project {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    display: grid;
+    max-height: 100%;
+  }
+  .main .project .project__img {
+    width: 100%;
+    order: 1;
+  }
+  .main .project .project__donation {
+    order: 2;
+    width: 100%;
+    padding: 0;
+    box-shadow: 0px -12px 15px 4px #1a1a1a;
+    text-align: center;
+  }
+  .main .project .project__donation .project__info {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .project .project__donation .project__swish {
+    float: none;
+  }
+  .main .project .project__donation .swish__img {
+    width: 3em;
+    height: 3em;
+    padding: 1em;
+  }
+  .main .project .project__donation .project__duration {
+    bottom: auto ;
+    top: 0.1em;
+    right: 50%;
+    transform: translateX(50%);
+    border-radius: 0 ;
+    padding: 0.2em;
+  }
+  .main .more .more__button {
+    top: 60%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .main .more .more__title {
+    top: 20%;
+    width: 50%;
+    transform: translateX(50%);
+    right: 50%;
+  }
+}
+@media (max-width: 900px) {
+  .more__title {
+    font-size: 2.5em !important;
+  }
+  .more__button {
+    top: 50% !important;
+  }
+}
