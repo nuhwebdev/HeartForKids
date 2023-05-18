@@ -6,7 +6,6 @@
 html,
 body {
   overflow-x: hidden;
-  background-color: red;
 }
 .hover--underline {
   position: relative;
