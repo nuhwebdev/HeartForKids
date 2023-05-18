@@ -99,7 +99,8 @@ body {
   background-color: #fc7317;
   text-align: center;
   width: 300px;
-  transition: transform 1s, background-color 1s, display 0;
+  transform: translate(100%, 0);
+  transition: transform 1s, background-color 1s, display 0.5s;
   border-radius: 10px 0 0 10px;
   box-shadow: 1px 1px 10px black;
 }

@@ -7,7 +7,6 @@
 
 html,body {
     overflow-x: hidden;
-    background-color: red;
 }
 
 @maincolor: #163724;
@@ -141,7 +140,8 @@ html,body {
     background-color: @buttontext--hover;
     text-align: center;
     width: 300px;
-    transition: transform 1s, background-color 1s, display 0;
+    transform: translate(100%, 0);
+    transition: transform 1s, background-color 1s, display 0.5s;
     border-radius: 10px 0 0 10px;
     box-shadow: 1px 1px 10px black;
 
@@ -171,7 +171,7 @@ html,body {
 }
 
 .popup--open {
-    transform: translate(0,0);
+    transform: translate(0, 0);
 
 }
 
