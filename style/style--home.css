@@ -469,5 +469,6 @@ p {
   }
   .main .more__button {
     top: 50% !important;
+    text-align: center !important;
   }
 }
