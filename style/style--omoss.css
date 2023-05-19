@@ -220,4 +220,22 @@ body {
     width: 70%;
     top: 40%;
   }
+  .main {
+    margin-top: 5em;
+    width: 85%;
+  }
+  .main h1 {
+    color: white;
+    background-color: #00ACA5;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 0.5em;
+  }
+  .main h3 {
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 3em;
+    font-weight: 500;
+  }
 }
