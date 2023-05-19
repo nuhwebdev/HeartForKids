@@ -421,22 +421,21 @@ p {
   }
   .main .project .project__donation .project__title {
     font-size: 1.5em !important;
-    margin-top: 2em;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    margin-top: 2em !important;
+    text-align: left !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 80% !important;
   }
   .main .project .project__donation .project__info {
     font-size: 1em !important;
-    text-align: left;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left !important;
+    width: 80% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   .main .project .project__donation .project__swish {
     padding-bottom: 0.5em;
-    float: none;
     font-size: 2.2em;
     text-align: left;
     width: 80%;
@@ -451,24 +450,18 @@ p {
   }
   .main .project .project__donation .swish__img {
     display: none;
-    width: 3em;
-    height: 3em;
-    padding: 0;
   }
   .main .project .project__donation .project__duration {
-    bottom: auto;
-    top: 0.1em;
-    right: 50%;
-    transform: translateX(50%);
-    border-radius: 0;
     padding: 0em;
-    font-size: 1em;
   }
   .main .more__title {
     font-size: 2em !important;
+    text-align: center !important;
+    width: 100% !important;
   }
   .main .more__button {
-    top: 50% !important;
-    width: 60% !important; 
+    top: 45% !important;
+    text-align: center !important;
+    width: 60%;
   }
 }
