@@ -384,7 +384,7 @@ p {
     right: 50%;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .hero__holder {
     max-width: 45em;
     color: white;
@@ -419,10 +419,73 @@ p {
     cursor: pointer;
     color: #fc7317;
   }
-  .more__title {
-    font-size: 2.5em !important;
+  .main .project {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    display: grid;
+    max-height: 100%;
   }
-  .more__button {
+  .main .project .project__img {
+    width: 100%;
+    order: 1;
+  }
+  .main .project .project__donation {
+    order: 2;
+    width: 100%;
+    padding: 0;
+    box-shadow: 0px -12px 15px 4px #1a1a1a;
+    text-align: center;
+  }
+  .main .project .project__donation .project__title {
+    font-size: 1.5em !important;
+    margin-top: 2em;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .main .project .project__donation .project__info {
+    font-size: 1em !important;
+    text-align: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .project .project__donation .project__swish {
+    padding-bottom: 0.5em;
+    float: none;
+    font-size: 2.2em;
+    text-align: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .project .project__donation .project__mark {
+    text-align: left;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .project .project__donation .swish__img {
+    display: none;
+    width: 3em;
+    height: 3em;
+    padding: 0;
+  }
+  .main .project .project__donation .project__duration {
+    bottom: auto;
+    top: 0.1em;
+    right: 50%;
+    transform: translateX(50%);
+    border-radius: 0;
+    padding: 0em;
+    font-size: 1em;
+  }
+  .main .more__title {
+    font-size: 2em !important;
+  }
+  .main .more__button {
     top: 50% !important;
   }
 }
