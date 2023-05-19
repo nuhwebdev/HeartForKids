@@ -454,6 +454,9 @@ p {
   .main .project .project__donation .project__duration {
     padding: 0em;
   }
+  .main .more {
+    margin: 0;
+  }
   .main .more__title {
     font-size: 2em !important;
     text-align: center !important;
