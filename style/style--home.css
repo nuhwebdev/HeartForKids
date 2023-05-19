@@ -384,7 +384,7 @@ p {
     right: 50%;
   }
 }
-@media (max-width: 700) {
+@media (max-width: 700px) {
   .hero__holder {
     max-width: 45em;
     color: white;
@@ -418,24 +418,6 @@ p {
   .hero__holder .button a:hover {
     cursor: pointer;
     color: #fc7317;
-  }
-  .main .project {
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    display: grid;
-    max-height: 100%;
-  }
-  .main .project .project__img {
-    width: 100%;
-    order: 1;
-  }
-  .main .project .project__donation {
-    order: 2;
-    width: 100%;
-    padding: 0;
-    box-shadow: 0px -12px 15px 4px #1a1a1a;
-    text-align: center;
   }
   .main .project .project__donation .project__title {
     font-size: 1.5em !important;
