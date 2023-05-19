@@ -3,6 +3,7 @@
   padding: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+html,
 body {
   overflow-x: hidden;
 }
@@ -99,7 +100,7 @@ body {
   text-align: center;
   width: 300px;
   transform: translate(100%, 0);
-  transition: transform 0.5s, background-color 1s, display 0.5s;
+  transition: transform 1s, background-color 1s, display 0.5s;
   border-radius: 10px 0 0 10px;
   box-shadow: 1px 1px 10px black;
 }
@@ -210,4 +211,57 @@ body {
   font-size: 2em;
   margin-top: 1em;
   margin-bottom: 0.5em;
+}
+@media (max-width: 1020px) {
+  .hero {
+    height: 20em;
+    position: relative;
+    margin-top: 2em;
+  }
+  .hero .hero__img {
+    object-fit: cover;
+    filter: brightness(50%);
+    object-position: top;
+  }
+  .hero .hero__title {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .hero .hero__content {
+    width: 50%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main .project__row {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .main .project__row__content {
+    font-size: 0.8em;
+  }
+  .main .project__row__content .project__title {
+    margin-bottom: 1em;
+    margin-top: 0em;
+  }
+}
+@media (max-width: 700px) {
+  .hero .hero__title {
+    text-align: center;
+    top: 15%;
+  }
+  .hero .hero__content {
+    width: 80%;
+    top: 55%;
+  }
+  .project__row {
+    display: block;
+  }
+  .project__row__content {
+    margin-left: 0 !important;
+  }
+  .project__title {
+    margin-top: 0.2em !important;
+  }
 }
