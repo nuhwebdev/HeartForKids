@@ -73,3 +73,172 @@
 
     
 }
+
+// MEDIA QUERIES
+
+@media (max-width: 1020px) {
+    .hero {
+        height: 20em;
+        position: relative;
+        margin-top: 2em;
+
+        .hero__img {
+            object-fit: cover;
+            filter: brightness(50%);
+            object-position: top;
+        }
+
+
+        .hero__title {
+
+
+            left: 50%;
+            transform: translateX(-50%);
+
+
+
+        }
+
+        .hero__content {
+
+            width: 50%;
+            text-align: center;
+
+
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+    }
+
+
+        .main {
+            padding: 2em;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            height: 22em;
+            margin-top: 5em;
+            margin-bottom: 7em;
+    
+            img {
+                object-fit: cover;
+    
+                object-position: 0 30%;
+                width: 50% !important;
+                border-radius: 10px;
+                box-shadow: 1px 1px 20px 2px lighten(black, 50%);
+            }
+    
+            .main__contact {
+                width: 100%;
+    
+                .email {
+                    text-decoration: none;
+    
+                    h3 {
+                        color: @buttontext--hover;
+                        font-size: 2.5em;
+                    }
+                }
+    
+                h3 {
+                    font-size: 2em;
+                    // color: @standardTextColor;
+                    color: @buttontext;
+    
+                }
+            }
+    
+    
+    
+    
+    
+    
+        }
+}
+
+
+@media (max-width: 700px) {
+    .hero {
+        height: 20em;
+        position: relative;
+        margin-top: 2em;
+
+        .hero__img {
+            object-fit: cover;
+            filter: brightness(50%);
+            object-position: top;
+        }
+
+
+        .hero__title {
+
+
+            left: 50%;
+            transform: translateX(-50%);
+
+
+
+        }
+
+        .hero__content {
+
+            width: 80% !important;
+            text-align: center;
+
+
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+    }
+
+
+    .main {
+        padding: 2em;
+        display: block !important;
+        align-items: center;
+        text-align: center;
+        height: 22em;
+        margin-top: 5em;
+        margin-bottom: 7em;
+
+        img {
+            object-fit: cover;
+
+            object-position: 70% 30%;
+            width: 100% !important;
+            border-radius: 10px;
+            box-shadow: 1px 1px 20px 2px lighten(black, 50%);
+        }
+
+        .main__contact {
+            margin-top: 1.5em;
+            width: 100%;
+
+            .email {
+                text-decoration: none;
+
+                h3 {
+
+                    color: @buttontext--hover;
+                    font-size: 1.8em !important;
+                }
+            }
+
+            h3 {
+                font-size: 1.5em;
+                // color: @standardTextColor;
+                color: @buttontext;
+
+            }
+        }
+
+
+
+
+
+
+    }
+}
