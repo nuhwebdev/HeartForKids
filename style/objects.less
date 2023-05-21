@@ -101,6 +101,9 @@ html,body {
 
 //NAVBAR
 .navbar {
+    .mobile__menu{
+        display: none;
+    }
     background-color: @secondcolor;
     width: 100%;
     position: sticky;
@@ -210,3 +213,83 @@ html,body {
 }
 
 //FOOTER
+
+// MEDIA QUERIES
+
+@media (max-width:1020px){
+    .navbar {
+            background-color: @secondcolor;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 15px lighten(black, 50%);
+    
+            .navbar__list {
+                display: flex;
+                justify-content: space-evenly !important;
+                list-style: none;
+                align-items: center;
+    
+                a {
+                    text-decoration: none;
+                    color: @standardTextColor;
+                    font-weight: 600;
+                    border-radius: 10px;
+                }
+    
+    
+    
+    
+                .navbar__list__logo {
+                    max-width: 120px;
+                    margin-top: -0.5em;
+                }
+    
+            }
+        }
+}
+
+
+@media (max-width:700px){
+    .navbar {
+        
+        .mobile__menu{
+            display: block;
+            position: absolute;
+            right: 0;
+            padding: 1em;
+            width: 2em ;
+            z-index: 100;
+        }
+            background-color: @secondcolor;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 15px lighten(black, 50%);
+    
+            .navbar__list {
+                display: none !important;
+                justify-content: space-between;
+                list-style: none;
+                align-items: center;
+    
+                a {
+                    text-decoration: none;
+                    color: @standardTextColor;
+                    font-weight: 600;
+                    border-radius: 10px;
+                }
+    
+    
+    
+    
+                .navbar__list__logo {
+                    max-width: 120px;
+                    margin-top: -0.5em;
+                }
+    
+            }
+        }
+}
