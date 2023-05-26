@@ -12,7 +12,11 @@
   <body>
     <!--NAVBAR-->
     <nav class="navbar">
-      <img class="mobile__menu" src="./icons8-menu-50.png" alt="" />
+      <div id="mobileMenuBurger" class="mobile__menu__burger">
+        <div class="menu__bar"></div>
+        <div class="menu__bar"></div>
+        <div class="menu__bar"></div>
+      </div>
       <ul class="navbar__list container">
         <li><a href="./omoss.html" class="hover--underline">OM OSS</a></li>
         <li>
@@ -36,6 +40,16 @@
         <h3>Märk: Donation</h3>
         <h2>123456789</h2>
         <h4 id="closePopUp" onclick="closePopUp()" id="closePopUp">Stäng</h4>
+      </div>
+      <div id="mobileMenu" class="mobile__menu">
+        <ul>
+          <p id="closeMobileMenu">X</p>
+          <li><a href="./index.html"> HEM</a></li>
+          <li><a href="./omoss.html"> OM OSS</a></li>
+          <li><a href="./projekt.html"> VÅRA PROJEKT</a></li>
+          <li><a href="./kontakt.html"> KONTAKT</a></li>
+          <li><button class="button button--charity">DONERA</button></li>
+        </ul>
       </div>
     </nav>
     <!--NAVBAR-->
