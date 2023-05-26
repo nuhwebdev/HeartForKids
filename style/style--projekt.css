@@ -285,6 +285,10 @@ body {
   margin-bottom: 1em;
   color: #262626;
 }
+.project__row .project__row__content .project__text {
+  line-height: 1.5;
+  font-weight: 500;
+}
 @media (max-width: 1020px) {
   .hero {
     height: 20em;
