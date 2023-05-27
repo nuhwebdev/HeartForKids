@@ -286,6 +286,7 @@ html,body {
                         color: @secondcolor;
                         font-size: 1.5em;
                         font-weight: 600;
+                        transition: color 0.3s;
                     }
 
                     a:hover{
@@ -302,9 +303,15 @@ html,body {
            font-weight: 600;
            font-size: 1em;
            padding: 0.3em;
-           margin: 0.5em;
+            position: absolute;
+            right: 0;
+            transition: color 0.3s;
            border-radius: 99%;
             border: 0.1px solid white;
+        }
+
+        #closeMobileMenu:hover{
+            color: @buttontext--hover;
         }
 
         .mobile__menu--open{
