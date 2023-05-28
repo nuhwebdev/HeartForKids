@@ -86,14 +86,14 @@ h1,h2,h3,h4,h5,p{
         display: flex;
         box-shadow: 1px 1px 30px 1px lighten(black,10%);
         border-radius: 10px;
-        max-height: 27em;
+        max-height: 100%;
         .project__img{
             width: 80%;
             img{
                 width: 100%;
                 height: 100%;
                 border-radius: 10px 0 0 10px;
-                object-fit: cover;
+                object-fit:fill;
             }
             }
             .project__donation{
@@ -122,6 +122,8 @@ h1,h2,h3,h4,h5,p{
                     color: @secondcolor;
                     margin-right: 2em;
                     margin-bottom: 1em;
+                    font-weight: 400;
+                    line-height: 1.2;
 
                 }
 
