@@ -217,6 +217,7 @@ body {
     color: white;
     font-size: 1.5em;
     font-weight: 600;
+    transition: color 0.3s;
   }
   .navbar .mobile__menu ul li a:hover {
     color: #fc7317;
@@ -228,9 +229,14 @@ body {
     font-weight: 600;
     font-size: 1em;
     padding: 0.3em;
-    margin: 0.5em;
+    position: absolute;
+    right: 0;
+    transition: color 0.3s;
     border-radius: 99%;
     border: 0.1px solid white;
+  }
+  .navbar #closeMobileMenu:hover {
+    color: #fc7317;
   }
   .navbar .mobile__menu--open {
     transform: translateX(0%);
@@ -256,6 +262,33 @@ body {
   .navbar .navbar__list .navbar__list__logo {
     max-width: 120px;
     margin-top: -0.5em;
+  }
+  .footer {
+    display: block !important;
+  }
+  .footer img {
+    width: 8em !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .footer nav {
+    width: 100% !important;
+    display: block !important;
+    text-align: center !important;
+  }
+  .footer li {
+    margin: 1em !important;
+  }
+  .footer a {
+    font-size: 1.3em !important;
+  }
+  .footer h3 {
+    width: 70% !important;
+    line-height: 1.5 !important;
+    font-size: 1.2em !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
   }
 }
 .hero {
@@ -297,8 +330,9 @@ body {
   padding: 0.5em;
 }
 .main h3 {
-  text-align: justify;
+  text-align: left;
   margin-bottom: 3em;
+  font-weight: 500;
 }
 @media (max-width: 1020px) {
   .hero {
