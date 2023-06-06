@@ -283,13 +283,20 @@ html,body {
 
                     a{
                         text-decoration: none;
-                        color: @secondcolor;
+                        color: @buttontext--hover;
                         font-size: 1.5em;
                         font-weight: 600;
                         transition: color 0.3s;
                     }
 
+                    .button a{
+                        color: @buttontext;
+                    }
+
                     a:hover{
+                        color: @secondcolor;
+                    }
+                    .button a:hover{
                         color: @buttontext--hover;
                     }
                 }
