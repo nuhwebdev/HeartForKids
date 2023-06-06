@@ -214,12 +214,18 @@ body {
   }
   .navbar .mobile__menu ul li a {
     text-decoration: none;
-    color: white;
+    color: #fc7317;
     font-size: 1.5em;
     font-weight: 600;
     transition: color 0.3s;
   }
+  .navbar .mobile__menu ul li .button a {
+    color: #00ACA5;
+  }
   .navbar .mobile__menu ul li a:hover {
+    color: white;
+  }
+  .navbar .mobile__menu ul li .button a:hover {
     color: #fc7317;
   }
   .navbar #closeMobileMenu {
