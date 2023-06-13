@@ -418,6 +418,7 @@ body {
   }
   .main__title {
     font-size: 2em !important;
+    width: 95% !important;
   }
   .project__row {
     display: block;

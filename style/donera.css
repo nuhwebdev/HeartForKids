@@ -300,7 +300,6 @@ body {
 .hero {
   height: 20em;
   position: relative;
-  margin-top: 2em;
 }
 .hero .hero__img {
   object-fit: cover;
