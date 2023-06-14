@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+    initial-scale=1.0"
+    />
+    <meta
+      property="og:title"
+      content="Heart For Kids - Stöd Barnen Världen Över"
+    />
+    <meta
+      name="description"
+      content="Heart For Kids är en välgörenhetsorganisation med mål att ekonomiskt stödja barnen i länder utsatta för extrem fattigdom"
+    />
+    <meta
+      property="og:description"
+      content="Heart For Kids är en välgörenhetsorganisation med mål att ekonomiskt stödja barnen i länder utsatta för extrem fattigdom"
+    />
+
+    <meta
+      property="og:image"
+      content="https://heartforkids.nu/Bilder/hero--kontakt.jpg"
+    />
+    <title>Hem - Heart For Kids</title>
+    <link rel="stylesheet" href="./style/style--home.css" />
+    <link rel="stylesheet" href="./style/objects.css" />
+    <link rel="icon" href="./Bilder/LOGO.jpeg" />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar">
+      <div id="mobileMenuBurger" class="mobile__menu__burger">
+        <div class="menu__bar"></div>
+        <div class="menu__bar"></div>
+        <div class="menu__bar"></div>
+      </div>
+      <ul class="navbar__list container">
+        <li><a href="./om-oss" class="hover--underline">OM OSS</a></li>
+        <li>
+          <a href="./projekt" class="hover--underline">VÅRA PROJEKT</a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./Bilder/LOGO.jpeg" alt="" class="navbar__list__logo"
+          /></a>
+        </li>
+        <li><a href="./kontakt" class="hover--underline">KONTAKT</a></li>
+        <li>
+          <button class="button button--charity" onclick="openPopUp()">
+            DONERA
+          </button>
+        </li>
+      </ul>
+      <div class="popup" id="popup">
+        <img src="./Bilder/swish small.png" alt="" />
+        <h2>Donera till Heart For Kids!</h2>
+        <h3>Märk: HFK Donation</h3>
+        <h2>0733201998</h2>
+        <h4 id="closePopUp" onclick="closePopUp()" id="closePopUp">Stäng</h4>
+      </div>
+      <div id="mobileMenu" class="mobile__menu">
+        <ul>
+          <p id="closeMobileMenu">X</p>
+          <li><a href="./hem"> HEM</a></li>
+          <li><a href="./om-oss"> OM OSS</a></li>
+          <li><a href="./projekt"> VÅRA PROJEKT</a></li>
+          <li><a href="./kontakt"> KONTAKT</a></li>
+          <li>
+            <button class="button button--charity">
+              <a href="./donera">DONERA</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--NAVBAR-->
+    <!--HERO-->
+    <div class="hero">
+      <video
+        height="100%"
+        class="hero__video"
+        loop
+        autoplay
+        muted
+        src="./Videos/HFK-HERO.mp4"
+      ></video>
+      <div class="hero__holder">
+        <h1>
+          <span class="highlight">STÖD BARNEN VÄRLDEN ÖVER</span>
+        </h1>
+        <h2>
+          Nya projekt för hjälpandet <br />
+          av barnen världen över. <br />
+          <br />
+          Gör skillnad i deras liv <br />
+          tillsammans med oss.
+        </h2>
+        <button class="button button--charity">
+          <a href="./projekt">VÅRA PROJEKT</a>
+        </button>
+      </div>
+    </div>
+    <!--HERO-->
+    <!--MAIN-->
+    <div class="main container">
+      <div class="project">
+        <div class="project__img">
+          <img src="./Bilder/project__gambia.jpeg" alt="" />
+        </div>
+        <div class="project__donation">
+          <h2 class="project__title">
+            Hjälp oss i vårt <br />
+            senaste projekt!
+          </h2>
+          <img id="project__logo" src="./Bilder/LOGO.jpeg" alt="" />
+          <h3 class="project__info">
+            Kampen för syskonen fortsätter! Vi ger inte upp, nej vi ger inte
+            upp. Varför skulle vi? För många av oss speglar inte denna
+            tacksamhet de oräkneliga antal av dessa vardagliga välsignelser vi
+            varje dag överöses av. Granska videor och bilder över lyckan när
+            våra syskon i utsatta, fattiga länder skänks den mat, vatten och
+            förnödenheter som vi har till hands varje dag. Deras lycka när
+            simpla vardagsbehov når dem, blir i deras ansikte glädjetårar och en
+            av deras bästa dagar i deras liv. Det lyser glädje i deras ansikten.
+            Som sagt, vi ger inte upp. Stötta Heart for kid's projekt världen
+            över med det ni kan, för detta gör att vi snabbare kan etablera oss
+            och växa och gå vidare till nästa projekt, bidnillah. Barnen är
+            ALLTID i fokus, och detta är vårat motto. Vi har en 100%
+            donationspolicy, varenda krona går till främjandet av att hjälpa
+            våra barn och syskon. Likaså dokumenteras alltid projekten utan
+            undantag och material uppvisas som vanligt.
+          </h3>
+          <h3 class="project__mark">Märk: Gambia</h3>
+          <h2 class="project__swish">0733201998</h2>
+          <img
+            src="./Bilder/swish small.png"
+            alt=""
+            class="img--contained swish__img"
+          />
+          <!-- <div class="project__duration">
+            <p>Avslutas den 25e Maj 23:59</p>
+          </div> -->
+        </div>
+      </div>
+      <div class="more">
+        <!-- <img class="img--contained more__img" src="./Bilder/more.jpg" alt="" /> -->
+        <img class="img--contained more__img" src="../Bilder/boy.jpg" alt="" />
+        <h1 class="more__title">
+          <span class="highlight">STÖD BARNEN</span> TILLSAMMANS <br />
+          MED OSS
+        </h1>
+        <button href="./projekt" class="button more__button button--charity">
+          <a href="./projekt">VÅRA PROJEKT</a>
+        </button>
+      </div>
+    </div>
+    <!--MAIN-->
+
+    <!--FOOTER-->
+    <div class="footer">
+      <nav class="container">
+        <a href="./hem"><img src="./Bilder/LOGO.jpeg" alt="" /></a>
+
+        <ul class="list--style--remove">
+          <li><a href="./om-oss" class="hover--underline">OM OSS</a></li>
+          <li>
+            <a href="./projekt" class="hover--underline">VÅRA PROJEKT</a>
+          </li>
+
+          <li><a href="./kontakt" class="hover--underline">KONTAKT</a></li>
+        </ul>
+        <h3 footer__organisationInfo>
+          Heart For Kids är en välgörenhetsorganisation med mål att ekonomiskt
+          stödja barnen i länder utsatta för extrem fattigdom
+        </h3>
+      </nav>
+    </div>
+    <!--FOOTER-->
+    <script src="./script.js"></script>
+  </body>
+</html>
